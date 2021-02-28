@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+			xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			x:Class="MM2PX.MainPage"
+			xmlns:local="clr-namespace:BRY">
+
+
+	<Grid Padding="0,0" RowSpacing="0" ColumnSpacing="0" BackgroundColor="#E0E0E0" AutomationProperties.IsInAccessibleTree="True">
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+			<RowDefinition Height="*" />
+		</Grid.RowDefinitions>
+
+		<local:CalcBtn x:Name="btnMM" Text="mm" 
+			FontSize="Large" Grid.Row="0" Grid.Column="0" Grid.RowSpan="2" BorderRadius="0" BorderWidth="1" BorderColor="Black"/>
+
+		<Label x:Name="tbMM" Text="0" FontSize="30" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"
+			TextColor="Black" BackgroundColor="#FFFFFF" 
+			HorizontalTextAlignment="End" VerticalTextAlignment="Center" LineBreakMode="NoWrap" Padding="20,0" />
+
+		<local:CalcBtn x:Name="btnMMS" Text="scale" FontSize="Small" Grid.Row="1" Grid.Column="1"  BorderRadius="0" BorderWidth="1" BorderColor="Black"/>
+
+		<Label x:Name="tbMMS" Text="1" FontSize="30" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"
+			TextColor="Black" BackgroundColor="#EAEAEA" 
+			HorizontalTextAlignment="End" VerticalTextAlignment="Center" LineBreakMode="NoWrap" Padding="20,0" />
+
+		<local:CalcBtn x:Name="btnDPI" Text="dpi" FontSize="Large" Grid.Row="2" Grid.Column="0"  BorderRadius="0" BorderWidth="1" BorderColor="Black"/>
+
+		<Label x:Name="tbDPI" Text="144" FontSize="30" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="3" 
+			TextColor="Black" BackgroundColor="White" 
+			HorizontalTextAlignment="End" VerticalTextAlignment="Center" LineBreakMode="NoWrap" Padding="20,0" />
+
+		<local:CalcBtn x:Name="btnPX" Text="px" FontSize="Large" Grid.Row="3" Grid.Column="0"  BorderRadius="0" BorderWidth="1" BorderColor="Black"/>
+
+		<Label x:Name="tbPX" Text="0" FontSize="30" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="3"
+			TextColor="Black" BackgroundColor="#EAEAEA"
+			HorizontalTextAlignment="End" VerticalTextAlignment="Center" LineBreakMode="NoWrap" Padding="20,0" />
+
+		<local:CalcBtn x:Name="btn07" Text="7" 
+			BackgroundColor="#FFFFFF"  BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="4" Grid.Column="0"  BorderRadius="0"/>
+		<local:CalcBtn x:Name="btn08" Text="8"
+			BackgroundColor="#F0F0F0" BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="4" Grid.Column="1"  BorderRadius="0"/>
+		<local:CalcBtn x:Name="btn09" Text="9"
+			BackgroundColor="#FFFFFF"  BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="4" Grid.Column="2"  BorderRadius="0"/>
+		<local:CalcBtn x:Name="btnBS" Text="BS" 
+			BackgroundColor="#E0E0E0" BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="4" Grid.Column="3"  BorderRadius="0" />
+
+		<local:CalcBtn x:Name="btn04" Text="4" 
+			BackgroundColor="#F0F0F0" BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="5" Grid.Column="0"  BorderRadius="0"/>
+		<local:CalcBtn x:Name="btn05" Text="5"
+			BackgroundColor="#D0D0D0" BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="5" Grid.Column="1"  BorderRadius="0"/>
+		<local:CalcBtn x:Name="btn06" Text="6" 
+			BackgroundColor="#F0F0F0" BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="5" Grid.Column="2"  BorderRadius="0"/>
+		<local:CalcBtn x:Name="btnCL" Text="CL"
+			BackgroundColor="#F0F0F0"  BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="5" Grid.Column="3"  BorderRadius="0" Grid.RowSpan="2"/>
+
+		<local:CalcBtn x:Name="btn01" Text="1" 
+			BackgroundColor="#FFFFFF" BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="6" Grid.Column="0"  BorderRadius="0"/>
+		<local:CalcBtn x:Name="btn02" Text="2"
+			BackgroundColor="#F0F0F0" BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="6" Grid.Column="1"  BorderRadius="0"/>
+		<local:CalcBtn x:Name="btn03" Text="3"
+			BackgroundColor="#FFFFFF" BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="6" Grid.Column="2"  BorderRadius="0"/>
+
+		<local:CalcBtn x:Name="btn00" Text="0"
+			BackgroundColor="#FFFFFF" BorderWidth="1" BorderColor="Black" TextColor="Black"
+			FontSize="Large" Grid.Row="7" Grid.Column="0"  Grid.ColumnSpan="2" BorderRadius="0"/>
+		<local:CalcBtn x:Name="btnDot" Text="." TextColor="Black"
+			BackgroundColor="#FFD0D0" BorderWidth="1" BorderColor="Black"
+			FontSize="Large" Grid.Row="7" Grid.Column="2"  Grid.ColumnSpan="2" BorderRadius="0"/>
+	</Grid>
+
+</ContentPage>
